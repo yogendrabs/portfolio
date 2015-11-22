@@ -1,0 +1,38 @@
+<html>
+<head><title>Product</title>
+</head>
+<body>
+<label>Price</label>
+<input type="textbox" id="input1" value="0"/>
+<br><br>
+<label>Quantity</label>
+<input type="textbox" id="input2" value="0"/>
+<br><br>
+<label>Total</label><input type="textbox" id="output" />
+<script>
+
+var input1=document.getElementById('input1');
+var input2=document.getElementById('input2');
+var output=document.getElementById('output');
+
+window.onload=function(){
+
+	// var mul==parseFloat(input1.value) * parseFloat(input2.value);
+	// output.value=mul;
+	
+	input1.onkeyup=function(){
+		var mul1=parseFloat(input1.value) * parseFloat(input2.value);
+		output.value=mul1;
+	};
+
+	input2.onkeyup=function(){
+		var mul2=parseFloat(input1.value) * parseFloat(input2.value);
+		output.value=mul2;
+	};
+};
+
+
+
+</script>
+</body>
+</html>
